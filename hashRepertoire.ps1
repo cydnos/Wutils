@@ -7,13 +7,13 @@ Manipulation d'éléments de manière directe. https://learn.microsoft.com/fr-fr
 
 # lister le contenu du chemin spécifié
 Get-ChildItem -Path "chemin_du_dossier" |
-# Triez par ordre alphabétique : d'abord les dossiers, puis les fichiers
+# Trier par ordre alphabétique : d'abord les dossiers, puis les fichiers
 Sort-Object { $_.PSIsContainer }, Name |
 # Pour chaque élément (dossier ou fichier)
 ForEach-Object {
-    # Calculez le hash SHA1 du fichier
+    # Calculer le hash SHA1 du fichier
     $hash = (Get-FileHash $_.FullName -Algorithm SHA1).Hash
-    # Créez un objet personnalisé avec le nom, la taille (en mégaoctets) et le hash SHA1 du fichier
+    # Créer un objet personnalisé avec le nom, la taille (en mégaoctets) et le hash SHA1 du fichier
     [PSCustomObject]@{
         Nom = $_.Name
         Taille = [math]::Round($_.Length / 1MB, 2)
@@ -21,9 +21,9 @@ ForEach-Object {
     }
 } |
 
-# Formatez les résultats sous forme de tableau avec une taille de colonne automatique
+# Formater les résultats sous forme de tableau avec une taille de colonne automatique
 Format-Table -AutoSize |
-# Convertissez la sortie du tableau en une chaîne avec une largeur maximale de 4096 caractères pour éviter la troncature
+# Convertisser la sortie du tableau en une chaîne avec une largeur maximale de 4096 caractères pour éviter la troncature
 Out-String -Width 4096 >
-# Redirigez la sortie vers un fichier texte spécifié
+# Rediriger la sortie vers un fichier texte spécifié
 nom_du_fichier.txt
