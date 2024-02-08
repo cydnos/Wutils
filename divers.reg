@@ -1,0 +1,36 @@
+;Windows Registry Editor Version 5.00
+
+;fond écran
+[
+Ordinateur\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\ActiveDesktop
+]
+;Empêche de changer le papier-peint du Bureau Active Desktop.
+"NoChangingWallPaper"=dword:00000001
+;Désactive tous les éléments du Bureau Active Desktop.
+"NoComponents"=dword:00000001
+;Empêche la création d éléments sur le Bureau Active Desktop.
+"NoAddingComponents"=dword:00000001
+
+;désactiver recherche bing
+[
+Ordinateur\HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Search
+]
+"BingSearchEnabled"=dword:00000000
+"CortanaConsent"=dword:00000000
+
+;cacher poste sur LAN
+[
+Ordinateur\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters
+]
+"Hidden"=dword:00000001
+
+;désactiver télémétrie (collecte info par windows)
+[
+Ordinateur\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DataCollection
+]
+"AllowTelemetry"=dword:00000000
+
+;menu contextuel
+[
+Ordinateur\HKEY_CLASSES_ROOT\Directory\Background\shell\Admin
+]
