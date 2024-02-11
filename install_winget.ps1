@@ -6,7 +6,7 @@ if (Get-Command winget -ErrorAction SilentlyContinue) {
 } else {
     # Si winget n'est pas installé, l'installe
     # Télécharge l'installateur de l'App Installer à partir du dépôt GitHub de Microsoft
-    Invoke-WebRequest -Uri "https://github.com/microsoft/winget-cli/releases/download/v1.0.11692/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle" -OutFile "Microsoft.DesktopAppInstaller.appxbundle"
+    Invoke-WebRequest -Uri "https://github.com/microsoft/winget-cli/releases/download/v1.6.3482/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle" -OutFile "Microsoft.DesktopAppInstaller.appxbundle"
 
     # Installe l'App Installer
     Add-AppxPackage -Path .\Microsoft.DesktopAppInstaller.appxbundle
