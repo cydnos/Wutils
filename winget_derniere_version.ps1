@@ -1,5 +1,8 @@
 # installe le gestionnaire de paquets Windows (winget)
 
+# aller dans le répertoire temp
+cd $env:Temp
+
 # Vérifie si winget est déjà installé
 if (Get-Command winget -ErrorAction SilentlyContinue) {
     Write-Output "Winget est déjà installé sur ce poste."
