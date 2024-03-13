@@ -31,7 +31,7 @@ La vue des filtres permet de cocher et décocher des filtres au besoin.
 Le meilleur moyen de mettre en place des filtres direct reste cependant d'ouvrir le menu contextuel sur un evenement (*clic droit*) puis de choisir un filtre a lui appliquer.
 Si la valeur pertinente fait partie d'une chaine plus large, la meilleure option reste de choisir l'option _**Edit Filter**_
 
-
+## Suggestions
 Voici quelques filtres intéressants à mettre en place pour visualiser des opérations importantes.
 
 ### Fichiers
