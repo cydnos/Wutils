@@ -6,7 +6,7 @@ Cocher *Filter > Drop filtered events* permet de limiter le nombre d'evenements 
 
 # Lancement de la trace
 
-Le but du jeu ici est d'exécuter le plus rapidement possible l'enchaînement d'actions possible :
+Le but du jeu ici est d'exécuter le plus rapidement possible l'enchaînement d'actions suivant :
 
 1. Demarrer la trace  (*Ctrl + E*)
 2. Executer le binaire a analyser
