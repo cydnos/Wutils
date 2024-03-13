@@ -58,8 +58,8 @@ Voici quelques filtres intéressants à mettre en place pour visualiser des opé
 
 Ces evenements semblent benins et donc a exclure afin de restreindre la vue a des evenements potentiellements plus interessant :
 
-|Column|Relation|Value|Action|Explication|
-|-|-|-|-|-|Exclude
+|Column|Relation|Value|Action|
+|-|-|-|-|
 |Detail|contains|Desired Access: Read|Exclude|
 |Detail|contains|Desired Access: Execute/Traverse|Exclude|
 |Detail|contains|Desired Access: Generic Read|Exclude|
