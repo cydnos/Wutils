@@ -60,7 +60,7 @@ Ces evenements semblent benins et donc a exclure afin de restreindre la vue a de
 
 |Column|Relation|Value|Action|Explication|
 |-|-|-|-|-|Exclude
-Detail|contains|Desired Access: Read|Exclude|
-Detail|contains|Desired Access: Execute/Traverse|Exclude|
-Detail|contains|Desired Access: Generic Read|Exclude|
-Detail|contains|Desired Access: Notify|Exclude|
+|Detail|contains|Desired Access: Read|Exclude|
+|Detail|contains|Desired Access: Execute/Traverse|Exclude|
+|Detail|contains|Desired Access: Generic Read|Exclude|
+|Detail|contains|Desired Access: Notify|Exclude|
