@@ -13,7 +13,7 @@ Le but du jeu ici est d'exécuter le plus rapidement possible l'enchaînement d'
 3. Ouvrir le Process Tree (*Ctrl + T*) ou *Tools > Process Tree*, selectionner le binaire a analyser puis cliquer sur *Include Subtree*.
  
 Les evenements affichés se limiteront désormais à ceux liés au binaire a analyser.
-Il faut desormais rechercher les evenements pertinents parmi le volume généralement important d'evenements presents.
+Il faut desormais rechercher les entrees pertinentes parmi le volume généralement important d'evenements presents.
 
 # Affinage
 
