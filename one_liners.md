@@ -1,4 +1,5 @@
 **les chaines de caractères précédées d'un $ sont à adapter en fonction de l'environnement du système.**
+[raccourcis clavier](https://ss64.com/nt/syntax-keyboard.html)
 
 # [cmd](https://ss64.com/nt/)
 > Desactiver l'expiration du mot de passe du compte courant
