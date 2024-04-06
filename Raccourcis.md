@@ -19,7 +19,7 @@
 |⊞ + ⇧ + ←|Déplacer la fenêtre vers l'écran de gauche|
 |⊞ + ↖|N’afficher que la fenêtre active|
 |⊞ + D|Bureau|
-||⊞ + ⇧ + M|Restaurer toutes les fenêtres|
+|⊞ + ⇧ + M|Restaurer toutes les fenêtres|
 |ctrl + ⊞ + D|Nouveau bureau|
 |ctrl + ⊞ + →|Aller au bureau de droite|
 |ctrl + ⊞ + ←|Aller au bureau de gauche|
