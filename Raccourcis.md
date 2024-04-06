@@ -1,0 +1,45 @@
+# Appels
+|Raccourci|Action|
+|-|-|
+|⊞ + &|Navigateur web|
+|⊞ + ⇧ + S|Capture d’écran|
+|⊞ + E|Explorateur de fichiers|
+|⊞ + D|Bureau|
+|⊞ + alt + D|Calendrier|
+|⊞ + I|Paramètres|
+|ctrl + ⇧ + echap|Gestionnaire de tâches|
+|⊞ + L|Verrouiller la session|
+
+
+# Fenêtres
+|Raccourci|Action|
+|-|-|
+|⊞ + →|Ancrer la fenêtre à droite|
+|⊞ + ←|Ancrer la fenêtre à gauche|
+|⊞ + ↖|N’afficher que la fenêtre active|
+|ctrl + ⊞ + D|Nouveau bureau|
+|ctrl + ⊞ + →|Aller au bureau de droite|
+|ctrl + ⊞ + ←|Aller au bureau de gauche|
+|ctrl + ⊞ + F4|Fermer le bureau|
+
+
+# Explorateur de fichiers
+|Raccourci|Action|
+|-|-|
+|alt + p|Volet de prévisualisation |
+|F2|Renommer l'élément|
+|ctrl + ⇧ + N|Nouveau dossier|
+|ctrl + ↵|Ouvrir le dossier dans une nouvelle fenêtre|
+|⇧ + ☒|Fermer la fenêtre et ses fenêtres parentes|
+
+# Texte
+|Raccourci|Action|
+|-|-|
+|ctrl + →|Mot suivant|
+|ctrl + ←|Mot précédant|
+|ctrl + ⇧ + →|Sélectionner jusqu’au mot suivant|
+|ctrl + ⇧ + ←|Sélectionner jusqu’au mot précédant|
+|⇧ + fin|Sélectionner jusqu’à fin de ligne|
+|⇧ + ↖|Sélectionner jusqu’au début de ligne|
+|alt gr + v|Collage spécial (word)|
+|alt + F8|Afficher le mot de passe à la connexion|
