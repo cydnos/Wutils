@@ -4,19 +4,22 @@
 |⊞ + &|Navigateur web|
 |⊞ + ⇧ + S|Capture d’écran|
 |⊞ + E|Explorateur de fichiers|
-|⊞ + D|Bureau|
 |⊞ + alt + D|Calendrier|
 |⊞ + I|Paramètres|
 |ctrl + ⇧ + echap|Gestionnaire de tâches|
 |⊞ + L|Verrouiller la session|
-
+|⊞ + X , U, U|Eteindre Windows|
 
 # Fenêtres
 |Raccourci|Action|
 |-|-|
 |⊞ + →|Ancrer la fenêtre à droite|
 |⊞ + ←|Ancrer la fenêtre à gauche|
+|⊞ + ⇧ + →|Déplacer la fenêtre vers l'écran de droite|
+|⊞ + ⇧ + ←|Déplacer la fenêtre vers l'écran de gauche|
 |⊞ + ↖|N’afficher que la fenêtre active|
+|⊞ + D|Bureau|
+||⊞ + ⇧ + M|Restaurer toutes les fenêtres|
 |ctrl + ⊞ + D|Nouveau bureau|
 |ctrl + ⊞ + →|Aller au bureau de droite|
 |ctrl + ⊞ + ←|Aller au bureau de gauche|
