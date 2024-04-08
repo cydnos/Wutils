@@ -1,15 +1,15 @@
 [Ressource Microsoft](https://learn.microsoft.com/fr-fr/sysinternals/downloads/procmon)
 
-1. [Parametrage basique](#Parametrage)
-2. [Lancement de la trace](#Lancement)
-3. [Affinage](#Affinage)
-    1. [File summary](##File)
-    2. [Highlight](#Highlight)
-    3. [Filtres direct](#Filtres)
-    4. [Suggestions](#Suggestions)
-        - [Fichiers](#Fichiers)
-        - [Registre](#Registre)
-        - [Bruit potentiel](#Bruit)
+1. [Parametrage basique](#parametrage-basique)
+2. [Lancement de la trace](#lancement-de-la-trace)
+3. [Affinage](#pffinage)
+    1. [File summary](##file-summary)
+    2. [Highlight](#highlight)
+    3. [Filtres direct](#filtres-direct)
+    4. [Suggestions](#suggestions)
+        - [Fichiers](#fichiers)
+        - [Registre](#registre)
+        - [Bruit potentiel](#bruit-potentiel)
 
 # Parametrage basique 
 
