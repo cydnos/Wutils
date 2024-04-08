@@ -48,3 +48,13 @@ dir | Rename-Item -NewName { $_.Name -replace '$ancienne_chaine','$nouvelle_chai
 ```powershell
 Get-ChildItem -Path "chemin_du_rÃ©pertoire" -Filter *.$* -Recurse | Remove-Item
 ```
+
+> Lister les 100 derniers fichiers accédés
+```powershell
+(gci C:\ -r | sort -Descending LastAccessTime | select -first 100) | Select-Object -Property LastAccessTime,FullName
+```
+
+> Lister les 100 derniers fichiers écrits
+```powershell
+(gci C:\ -r | sort -Descending LastWriteTime | select -first 100) | Select-Object -Property LastWriteTime,FullName
+```
