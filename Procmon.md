@@ -4,12 +4,12 @@
 2. [Lancement de la trace](#Lancement)
 3. [Affinage](#Affinage)
     1. [File summary](##File)
-    2. [Highlight](##Highlight)
-    3. [Filtres direct](##Filtres)
-    4. [Suggestions](##Suggestions)
-        - [Fichiers](###Fichiers)
-        - [Registre](###Registre)
-        - [Bruit potentiel](###Bruit)
+    2. [Highlight](#Highlight)
+    3. [Filtres direct](#Filtres)
+    4. [Suggestions](#Suggestions)
+        - [Fichiers](#Fichiers)
+        - [Registre](#Registre)
+        - [Bruit potentiel](#Bruit)
 
 # Parametrage basique 
 
