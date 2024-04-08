@@ -8,7 +8,6 @@
 |⊞ + I|Paramètres|
 |ctrl + ⇧ + echap|Gestionnaire de tâches|
 |⊞ + L|Verrouiller la session|
-|⊞ + X , U, U|Eteindre Windows|
 
 # Fenêtres
 |Raccourci|Action|
