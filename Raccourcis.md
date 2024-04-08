@@ -1,3 +1,8 @@
+- [Appels](#appels)
+- [Fenêtres](#fenêtres)
+- [Explorateur de fichiers](#explorateur-de-fichiers)
+- [Texte](#texte)
+
 # Appels
 |Raccourci|Action|
 |-|-|
