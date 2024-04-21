@@ -46,9 +46,9 @@
 |ctrl + ←|Mot précédent|
 |ctrl + ⇧ + →|mot suivant|
 |ctrl + ⇧ + ←|Sélectionner jusqu’au mot précédent|
-|ctrl + ↑|Paragraphe précédant (word)|
+|ctrl + ↑|Paragraphe précédent (word)|
 |ctrl + ↓|Paragraphe suivant (word)|
-|ctrl + ⇧ + ↑|Sélectionner jusqu’au paragraphe précédant (word)|
+|ctrl + ⇧ + ↑|Sélectionner jusqu’au paragraphe précédent (word)|
 |ctrl + ⇧ + ↓|Sélectionner jusqu’au paragraphe suivant (word)|
 |⇧ + fin|Sélectionner jusqu’à fin de ligne|
 |⇧ + ↖|Sélectionner jusqu’au début de ligne|
