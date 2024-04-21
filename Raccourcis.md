@@ -43,10 +43,14 @@
 |Raccourci|Action|
 |-|-|
 |ctrl + →|Mot suivant|
-|ctrl + ←|Mot précédant|
-|ctrl + ⇧ + →|Sélectionner jusqu’au mot suivant|
-|ctrl + ⇧ + ←|Sélectionner jusqu’au mot précédant|
+|ctrl + ←|Mot précédent|
+|ctrl + ⇧ + →|mot suivant|
+|ctrl + ⇧ + ←|Sélectionner jusqu’au mot précédent|
+|ctrl + ↑|Paragraphe précédant (word)|
+|ctrl + ↓|Paragraphe suivant (word)|
+|ctrl + ⇧ + ↑|Sélectionner jusqu’au paragraphe précédant (word)|
+|ctrl + ⇧ + ↓|Sélectionner jusqu’au paragraphe suivant (word)|
 |⇧ + fin|Sélectionner jusqu’à fin de ligne|
 |⇧ + ↖|Sélectionner jusqu’au début de ligne|
-|alt gr + v|Collage spécial (word)|
+|alt gr + v|Collage spécial|
 |alt + F8|Afficher le mot de passe à la connexion|
