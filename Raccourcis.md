@@ -36,9 +36,10 @@
 # Explorateur de fichiers
 |Raccourci|Action|
 |-|-|
-|alt + p|Volet de prévisualisation |
+|alt + p|Volet de prévisualisation|
 |F2|Renommer l'élément|
 |ctrl + ⇧ + N|Nouveau dossier|
+|ctrl + N|Dupliquer la fenêtre courante|
 |ctrl + ↵|Ouvrir le dossier dans une nouvelle fenêtre|
 |⇧ + ☒|Fermer la fenêtre et ses fenêtres parentes|
 
