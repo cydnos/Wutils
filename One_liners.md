@@ -16,7 +16,7 @@
 **les chaines de caractères précédées d'un $ sont à adapter en fonction de l'environnement du système.**
 [raccourcis clavier](https://ss64.com/nt/syntax-keyboard.html)
 
-# [cmd](https://ss64.com/nt/)
+## [cmd](https://ss64.com/nt/)
 ### Desactiver l'expiration du mot de passe du compte courant
 ```batch
 net accounts /maxpwage:unlimited
@@ -49,7 +49,7 @@ winget upgrade
 systeminfo | findstr ModŠle >> cle.txt & wmic path softwarelicensingservice get oa3xoriginalproductkey >> cle.txt
 ```
 
-# [powershell](https://ss64.com/ps/)
+## [powershell](https://ss64.com/ps/)
 ### Lister recursivement le contenu d'un répertoire
 ```powershell
 Get-ChildItem -Path 'C:\YourFolderPath' -Recurse -File | ForEach-Object { $_.BaseName } | Out-File -FilePath '.\liste.txt'
