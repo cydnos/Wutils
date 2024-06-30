@@ -50,8 +50,8 @@ winget upgrade
 systeminfo | findstr ModŠle >> cle.txt & wmic path softwarelicensingservice get oa3xoriginalproductkey >> cle.txt
 ```
 
-## [powershell](https://ss64.com/ps/) [↰](#sommaire)
-### Lister recursivement le contenu d'un répertoire
+## [powershell](https://ss64.com/ps/)
+### Lister recursivement le contenu d'un répertoire [↰](#sommaire)
 ```powershell
 Get-ChildItem -Path 'C:\YourFolderPath' -Recurse -File | ForEach-Object { $_.BaseName } | Out-File -FilePath '.\liste.txt'
 ```
