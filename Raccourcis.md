@@ -4,7 +4,7 @@
 - [Explorateur de fichiers](#explorateur-de-fichiers)
 - [Texte](#texte)
 
-# Appels [↰](#sommaire)
+# Appels [⬏](#sommaire)
 |Raccourci|Action|
 |-|-|
 |⊞ + &|Navigateur web|
@@ -17,7 +17,7 @@
 |⊞ + L|Verrouiller la session|
 [^1]: Pour activer ce raccourci, suivre Démarrer > Paramètres > Système  > Presse-papiers, puis activez le bouton bascule sous Historique du Presse-papiers.
 
-# Fenêtres [↰](#sommaire)
+# Fenêtres [⬏](#sommaire)
 |Raccourci|Action|
 |-|-|
 |⊞ + →|Ancrer la fenêtre à droite|
@@ -34,7 +34,7 @@
 |ctrl + ⊞ + F4|**Fermer le bureau**|
 
 
-# Explorateur de fichiers [↰](#sommaire)
+# Explorateur de fichiers [⬏](#sommaire)
 |Raccourci|Action|
 |-|-|
 |alt + p|Volet de prévisualisation|
@@ -44,7 +44,7 @@
 |ctrl + ↵|Ouvrir le dossier dans une nouvelle fenêtre|
 |⇧ + ☒|Fermer la fenêtre et ses fenêtres parentes|
 
-# Texte [↰](#sommaire)
+# Texte [⬏](#sommaire)
 |Raccourci|Action|
 |-|-|
 |ctrl + →|Mot suivant|
