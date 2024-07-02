@@ -15,7 +15,7 @@
 |⊞ + I|Paramètres|
 |ctrl + ⇧ + echap|Gestionnaire de tâches|
 |⊞ + L|Verrouiller la session|
-[^1]: Pour activer ce raccourci, suivre Démarrer > Paramètres > Système  > Presse-papiers, puis activez le bouton bascule sous Historique du Presse-papiers.
+[^1]: Pour activer ce raccourci, suivre **Démarrer > Paramètres > Système  > Presse-papiers**, puis activer l'option *Historique du Presse-papiers*.
 
 # Fenêtres [⬏](#sommaire)
 |Raccourci|Action|
