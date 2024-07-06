@@ -10,7 +10,7 @@
 2. [powershell](#powershell)
     - [Lister le contenu du répertoire de l'utilisateur courant](#lister-le-contenu-du-r%C3%A9pertoire-de-lutilisateur-courant-)
     - [Lister recursivement le contenu d'un répertoire](#lister-recursivement-le-contenu-dun-répertoire-)
-    - [Renommer tous les fichiers d'un répertoire](#rennomer-tous-les-fichiers-dun-répertoire-)
+    - [Renommer tous les fichiers d'un répertoire](#renommer-tous-les-fichiers-dun-répertoire-)
     - [Supprimer recursivement les fichiers avec une certaine extension d'un répertoire](#supprimer-recursivement-les-fichiers-avec-une-certaine-extension-dun-répertoire-)
     - [Lister les 100 derniers fichiers accédés](#lister-les-100-derniers-fichiers-acc%C3%A9d%C3%A9s-gci-alias-pour-get-childitem-)
     - [Lister les 100 derniers fichiers écrits](#lister-les-100-derniers-fichiers-écrits-)
