@@ -1,6 +1,6 @@
 # Sommaire
 1. [cmd](#cmd)
-    - [Désactiver l'expiration du mot de passe du compte courant](#desactiver-lexpiration-du-mot-de-passe-du-compte-courant)
+    - [Désactiver l'expiration du mot de passe du compte courant](#desactiver-lexpiration-du-mot-de-passe-du-compte-courant-)
     - [Désactiver veille prolongée](#desactiver-veille-prolong%C3%A9e-supprime-le-fichier-de-stockage-de-ram-sur-le-disque)
     - [Remettre tout les bits non référencés par la table MFT à 0](#remettre-tout-les-bits-non-r%C3%A9f%C3%A9renc%C3%A9s-par-la-table-mft-%C3%A0-0-par-exemple-sur-le-lecteur-c-n%C3%A9cessite-sdelete)
     - [Lister pilotes](#lister-pilotes)
@@ -8,6 +8,7 @@
     - [Lister / supprimer / mettre à jour un paquet intallé](#lister--supprimer--mettre-%C3%A0-jour-un-paquet-intall%C3%A9-n%C3%A9cessite-winget)
     - [Récupérer clé Windows](#recuperer-clé-windows)
 2. [powershell](#powershell)
+    - Lister le contenu du répertoire de l'utilisateur courant
     - [Lister recursivement le contenu d'un répertoire](#lister-recursivement-le-contenu-dun-répertoire)
     - [Rennomer tous les fichiers d'un répertoire](#rennomer-tous-les-fichiers-dun-répertoire)
     - [Supprimer recursivement les fichiers avec une certaine extension d'un répertoire](#supprimer-recursivement-les-fichiers-avec-une-certaine-extension-dun-répertoire)
@@ -51,6 +52,11 @@ systeminfo | findstr ModŠle >> cle.txt & wmic path softwarelicensingservice get
 ```
 
 ## [powershell](https://ss64.com/ps/)
+
+### Lister le contenu du répertoire de l'utilisateur courant [↰](#sommaire)
+```powershell
+dir env:userprofile
+```
 ### Lister recursivement le contenu d'un répertoire [↰](#sommaire)
 ```powershell
 Get-ChildItem -Path 'C:\YourFolderPath' -Recurse -File | ForEach-Object { $_.BaseName } | Out-File -FilePath '.\liste.txt'
