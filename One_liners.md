@@ -56,7 +56,7 @@ systeminfo | findstr ModŠle >> cle.txt & wmic path softwarelicensingservice get
 
 ### Lister graphiquement le contenu du répertoire de l'utilisateur courant [↰](#sommaire)
 ```powershell
-tree $env:userprofile
+tree /f $env:userprofile
 ```
 
 ### Lister recursivement le contenu d'un répertoire [↰](#sommaire)
