@@ -16,7 +16,7 @@
     - [Lister les 100 derniers fichiers accédés](#lister-les-100-derniers-fichiers-acc%C3%A9d%C3%A9s-gci-alias-pour-get-childitem-)
     - [Lister les 100 derniers fichiers écrits](#lister-les-100-derniers-fichiers-écrits-)
 
-**les chaines de caractères précédées d'un $ sont à adapter en fonction de l'environnement du système.**
+**les chaines de caractères précédées d'un € sont à adapter en fonction de l'environnement du système.**
 [raccourcis clavier](https://ss64.com/nt/syntax-keyboard.html)
 
 ## [cmd](https://ss64.com/nt/)
@@ -39,7 +39,7 @@ driverquery -v
 ### Changer paramètres ip [↰](#sommaire)
 ```batch
 route print -4
-netsh interface ip set addresss "$nominterface" static $ip $masque $passerelle
+netsh interface ip set addresss "€nominterface" static €ip €masque €passerelle
 ```
 ### Lister / supprimer / mettre à jour un paquet intallé, nécessite [winget](https://github.com/microsoft/winget-cli/releases) [↰](#sommaire)
 ```batch
@@ -54,9 +54,9 @@ systeminfo | findstr ModŠle >> cle.txt & wmic path softwarelicensingservice get
 
 ## [powershell](https://ss64.com/ps/)
 
-### Lister le contenu du répertoire de l'utilisateur courant [↰](#sommaire)
+### Lister graphiquement le contenu du répertoire de l'utilisateur courant [↰](#sommaire)
 ```powershell
-dir env:userprofile
+tree $env:userprofile
 ```
 
 ### Lister recursivement le contenu d'un répertoire [↰](#sommaire)
@@ -71,12 +71,12 @@ Compare-Object -ReferenceObject (Get-Content -Path file1.txt) -DifferenceObject 
 
 ### Renommer tous les fichiers d'un répertoire [↰](#sommaire)
 ```powershell
-dir | Rename-Item -NewName { $_.Name -replace '$ancienne_chaine','$nouvelle_chaine' }
+dir | Rename-Item -NewName { $_.Name -replace '€ancienne_chaine','€nouvelle_chaine' }
 ```
 
 ### Supprimer recursivement les fichiers avec une certaine extension d'un répertoire [↰](#sommaire)
 ```powershell
-Get-ChildItem -Path "chemin_du_rÃ©pertoire" -Filter *.$* -Recurse | Remove-Item
+Get-ChildItem -Path "chemin_du_rÃ©pertoire" -Filter *.€* -Recurse | Remove-Item
 ```
 
 ### Lister les 100 derniers fichiers accédés (gci alias pour [Get-ChildItem](https://blog.netwrix.com/2023/06/21/get-childitem-cmdlet-in-powershell/)) [↰](#sommaire)
