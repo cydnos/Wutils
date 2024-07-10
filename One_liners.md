@@ -10,6 +10,7 @@
 2. [powershell](#powershell)
     - [Lister le contenu du répertoire de l'utilisateur courant](#lister-le-contenu-du-r%C3%A9pertoire-de-lutilisateur-courant-)
     - [Lister recursivement le contenu d'un répertoire](#lister-recursivement-le-contenu-dun-répertoire-)
+    - [Afficher les differences entre 2 fichiers](#afficher-les-differences-entre-2-fichiers-)
     - [Renommer tous les fichiers d'un répertoire](#renommer-tous-les-fichiers-dun-répertoire-)
     - [Supprimer recursivement les fichiers avec une certaine extension d'un répertoire](#supprimer-recursivement-les-fichiers-avec-une-certaine-extension-dun-répertoire-)
     - [Lister les 100 derniers fichiers accédés](#lister-les-100-derniers-fichiers-acc%C3%A9d%C3%A9s-gci-alias-pour-get-childitem-)
@@ -57,10 +58,17 @@ systeminfo | findstr ModŠle >> cle.txt & wmic path softwarelicensingservice get
 ```powershell
 dir env:userprofile
 ```
+
 ### Lister recursivement le contenu d'un répertoire [↰](#sommaire)
 ```powershell
 Get-ChildItem -Path 'C:\YourFolderPath' -Recurse -File | ForEach-Object { $_.BaseName } | Out-File -FilePath '.\liste.txt'
 ```
+
+### Afficher les differences entre 2 fichiers [↰](#sommaire)
+```powershell
+Compare-Object -ReferenceObject (Get-Content -Path file1.txt) -DifferenceObject (Get-Content -Path file2.txt)
+```
+
 ### Renommer tous les fichiers d'un répertoire [↰](#sommaire)
 ```powershell
 dir | Rename-Item -NewName { $_.Name -replace '$ancienne_chaine','$nouvelle_chaine' }
