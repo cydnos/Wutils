@@ -8,6 +8,7 @@
 - [Etalonner l'ecran](#etalonner-lecran-)
 - [Connexions réseau](#connexions-réseau-)
 - [Partage bluetooth](#partage-bluetooth-)
+- [Propriétés systeme](#propri%C3%A9t%C3%A9s-syst%C3%A8me-)
 
 > [!TIP]  
 > Les appels suivants peuvent également être lancés depuis la barre d'adresse de l'explorateur de fichiers
