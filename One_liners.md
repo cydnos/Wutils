@@ -10,6 +10,7 @@
 2. [powershell](#powershell)
     - [Lister graphiquement le contenu du répertoire de l'utilisateur courant](#lister-graphiquement-le-contenu-du-r%C3%A9pertoire-de-lutilisateur-courant-)
     - [Lister recursivement le contenu d'un répertoire](#lister-recursivement-le-contenu-dun-répertoire-)
+    - [Lister les logiciels installés](#lister-les-logiciels-install%C3%A9s-)
     - [Afficher les differences entre 2 fichiers](#afficher-les-differences-entre-2-fichiers-)
     - [Renommer tous les fichiers d'un répertoire](#renommer-tous-les-fichiers-dun-répertoire-)
     - [Supprimer recursivement les fichiers avec une certaine extension d'un répertoire](#supprimer-recursivement-les-fichiers-avec-une-certaine-extension-dun-répertoire-)
@@ -62,6 +63,11 @@ tree /f $env:userprofile
 ### Lister recursivement le contenu d'un répertoire [↰](#sommaire)
 ```powershell
 Get-ChildItem -Path 'C:\YourFolderPath' -Recurse -File | ForEach-Object { $_.BaseName } | Out-File -FilePath '.\liste.txt'
+```
+
+### Lister les logiciels installés [↰](#sommaire)
+```powershell
+Get-ItemProperty HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* | Select-Object DisplayName, DisplayVersion, Publisher, InstallDate | Format-Table –AutoSize
 ```
 
 ### Afficher les differences entre 2 fichiers [↰](#sommaire)
