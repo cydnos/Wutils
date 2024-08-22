@@ -16,6 +16,7 @@
     - [Supprimer recursivement les fichiers avec une certaine extension d'un répertoire](#supprimer-recursivement-les-fichiers-avec-une-certaine-extension-dun-répertoire-)
     - [Lister les 100 derniers fichiers accédés](#lister-les-100-derniers-fichiers-acc%C3%A9d%C3%A9s-gci-alias-pour-get-childitem-)
     - [Lister les 100 derniers fichiers écrits](#lister-les-100-derniers-fichiers-écrits-)
+    - [Desactiver IPv6](#desactiver-ipv6-)
 
 **les chaines de caractères précédées d'un € sont à adapter en fonction de l'environnement du système.**
 [raccourcis clavier](https://ss64.com/nt/syntax-keyboard.html)
@@ -93,4 +94,10 @@ Get-ChildItem -Path "chemin_du_rÃ©pertoire" -Filter *.€* -Recurse | Remove-I
 ### Lister les 100 derniers fichiers écrits [↰](#sommaire)
 ```powershell
 (gci C:\ -r | sort -Descending LastWriteTime | select -first 100) | Select-Object -Property LastWriteTime,FullName
+```
+
+### Desactiver IPv6 [↰](#sommaire)
+> correctif [CVE-2024-38063](https://www.bleepingcomputer.com/news/microsoft/zero-click-windows-tcp-ip-rce-impacts-all-systems-with-ipv6-enabled-patch-now/)
+```powershell
+Disable-NetAdapterBinding -Name "*" -ComponentID ms_tcpip6
 ```
