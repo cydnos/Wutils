@@ -74,6 +74,7 @@
 |`⇧` + `↖`|Sélectionner jusqu’au **début** de ligne|
 |`ctrl` + `⇧` + `↑`|Sélectionner jusqu’au paragraphe **précédent** (_word_)|
 |`ctrl` + `⇧` + `↓`|Sélectionner jusqu’au paragraphe **suivant** (_word_)|
+|`alt` + sélectionner du texte dans le lien|**Sélectionner seulement du texte d’un lien**|
 
 ## Suppression
 |Raccourci|Action|
