@@ -8,6 +8,7 @@
     - [Lister / supprimer / mettre à jour un paquet intallé](#lister--supprimer--mettre-%C3%A0-jour-un-paquet-intall%C3%A9-n%C3%A9cessite-winget-)
     - [Récupérer clé Windows](#recuperer-clé-windows-)
 2. [powershell](#powershell)
+    - [Installer winget](#installer-winget-)
     - [Lister graphiquement le contenu du répertoire de l'utilisateur courant](#lister-graphiquement-le-contenu-du-r%C3%A9pertoire-de-lutilisateur-courant-)
     - [Lister recursivement le contenu d'un répertoire](#lister-recursivement-le-contenu-dun-répertoire-)
     - [Lister les logiciels installés](#lister-les-logiciels-install%C3%A9s-)
@@ -55,6 +56,11 @@ systeminfo | findstr ModŠle >> cle.txt & wmic path softwarelicensingservice get
 ```
 
 ## [powershell](https://ss64.com/ps/)
+
+### Installer winget [↰](#sommaire)
+```powershell
+Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
+```
 
 ### Lister graphiquement le contenu du répertoire de l'utilisateur courant [↰](#sommaire)
 ```powershell
