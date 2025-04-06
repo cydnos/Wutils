@@ -9,8 +9,8 @@
     - [Récupérer clé Windows](#recuperer-clé-windows-)
 2. [powershell](#powershell)
     - [Installer winget](#installer-winget-)
-    - [Lister graphiquement le contenu du répertoire de l'utilisateur courant](#lister-graphiquement-le-contenu-du-r%C3%A9pertoire-de-lutilisateur-courant-)
-    - [Lister recursivement le contenu d'un répertoire](#lister-recursivement-le-contenu-dun-répertoire-)
+    - [Lister graphiquement le contenu d'un répertoire](#lister-graphiquement-le-contenu-dun-répertoire-)
+    - [Lister recursivement le contenu du répertoire de l'utilisateur courant](#lister-recursivement-le-contenu-du-r%C3%A9pertoire-de-lutilisateur-courant-)
     - [Lister les logiciels installés](#lister-les-logiciels-install%C3%A9s-)
     - [Afficher les differences entre 2 fichiers](#afficher-les-differences-entre-2-fichiers-)
     - [Renommer tous les fichiers d'un répertoire](#renommer-tous-les-fichiers-dun-répertoire-)
@@ -62,14 +62,15 @@ systeminfo | findstr ModŠle >> cle.txt & wmic path softwarelicensingservice get
 Add-AppxPackage -RegisterByFamilyName -MainPackage Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
 ```
 
-### Lister graphiquement le contenu du répertoire de l'utilisateur courant [↰](#sommaire)
+### Lister graphiquement le contenu d'un répertoire [↰](#sommaire)
+> Dans le terminal et dans un fichier portant le nom du répertoire parent
 ```powershell
-tree /f $env:userprofile
+tree /f /a | Tee-Object -FilePath "$((Get-Item .).Name).txt"
 ```
 
-### Lister recursivement le contenu d'un répertoire [↰](#sommaire)
+### Lister recursivement le contenu du répertoire de l'utilisateur courant [↰](#sommaire)
 ```powershell
-Get-ChildItem -Path 'C:\YourFolderPath' -Recurse -File | ForEach-Object { $_.BaseName } | Out-File -FilePath '.\liste.txt'
+Get-ChildItem -Path $env:userprofile -Recurse -File | ForEach-Object { $_.BaseName } | Out-File -FilePath '.\liste.txt'
 ```
 
 ### Lister les logiciels installés [↰](#sommaire)
