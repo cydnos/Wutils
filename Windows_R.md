@@ -23,7 +23,7 @@ Source : [ss64](https://ss64.com/nt/run.html)
 |`%APPDATA%`|C:\Users\\{utilisateur}\AppData\Roaming|
 |`%CommonProgramFiles%` ou `%CommonProgramW6432%`|C:\Program Files\Common Files|
 |`%CommonProgramFiles(x86)%`|C:\Program Files (x86)\Common Files|
-|`%HOMEDRIVE%` ou `%SystemDrive%`|C:\|
+|`%HOMEDRIVE%` ou `%SystemDrive%`|C:\\|
 |`%HOMEPATH%` ou `%USERPROFILE%`|C :\Users\\{utilisateur}|
 |`%LOCALAPPDATA%`|C:\Users\\{utilisateur}\AppData\Local|
 |`%OneDrive%`|Le répertoire de synchronisation OneDrive|
