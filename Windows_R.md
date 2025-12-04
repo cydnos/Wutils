@@ -17,7 +17,7 @@
 
 Source : [ss64](https://ss64.com/nt/run.html)
 
-|Appel|Emplacement|
+|Variable d'environnement|Emplacement|
 |:-:|-|
 |`%ALLUSERSPROFILE%` ou `%ProgramData%` | C:\ProgramData |
 |`%APPDATA%` | C:\Users\\{utilisateur}\AppData\Roaming |
