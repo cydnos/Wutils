@@ -1,9 +1,9 @@
 # Sommaire
-- [Appels](#appels)
-- [Fenêtres](#fenêtres)
-- [Excel](#excel)
-- [Explorateur de fichiers](#explorateur-de-fichiers)
-- [Texte](#texte)
+- [Appels](#appels-)
+- [Fenêtres](#fenêtres-)
+- [Excel](#excel-)
+- [Explorateur de fichiers](#explorateur-de-fichiers-)
+- [Texte](#texte-)
 
 # Appels [⬏](#sommaire)
 |Raccourci|Action|
