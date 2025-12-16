@@ -43,12 +43,10 @@
 |:-:|-|
 |`ctrl` + `⇧` + `L`|Filtres|
 |`ctrl` + `⇧` + `espace`|Sélectionner l'intégralité du tableau courant|
-|`` + `` + ``||
 |`alt` + `=`|Somme d'une sélection|
 |`alt` + `-`|Moyenne  d'une sélection|
-|`` + ``||
-|``||
-|``||
+|`ctrl` + `⇧` + `→`|Sélectionner jusqu'à la fin de la **ligne**|
+|`ctrl` + `⇧` + `↓`|Sélectionner jusqu'à la fin de la **colonne**|
 
 # Explorateur de fichiers [⬏](#sommaire)
 |Raccourci|Action|
@@ -63,7 +61,7 @@
 |`ctrl` + `N`|**Dupliquer la fenêtre courante**|
 |`ctrl` + `↵`|Ouvrir le dossier dans une nouvelle fenêtre|
 |`⇧` + `☒`|Fermer la fenêtre et ses fenêtres parentes|
-[^2]: Ne fonctionne pas avec le pavé numérique. Les typs d'affichage vont en taille décroissante.
+[^2]: Ne fonctionne pas avec le pavé numérique. Les types d'affichage vont en taille décroissante.
 [^3]: Ce raccourci nécessite l’utilisation d’un pavé numérique.
 [^4]: Il est possible de rennomer plusieurs éléments d'un coup en les sélectionnant au préalable, puis en appuyant sur `F2` pour ensuite saisir le nouveau nom qui sera appliqué avec une incrémentation entre parenthèses. Par exemple : fichier, fichier (1), fichier (2)...
 
@@ -109,6 +107,10 @@
 |`alt` + `F8`|Afficher le mot de passe à la connexion|
 
 <!--
+|`` + `` + ``||
+|`` + ``||
+|``||
+
 |`ctrl` + `Faire glisser Fichiers et Dossiers`|**Copier** un ficher/dossier ou du texte suite à son déplacement graphique (par glisser/déposer)|
 |`⇧` + `Faire glisser Fichiers et Dossiers`|**Déplacer** un ficher/dossier ou du texte suite à son déplacement graphique (par glisser/déposer)|
 |`alt` + `Faire glisser Fichiers et Dossiers`|créer un raccourci vers le fichier/dossier|
