@@ -1,6 +1,7 @@
 # Sommaire
 - [Appels](#appels)
 - [Fenêtres](#fenêtres)
+- [Excel](#excel)
 - [Explorateur de fichiers](#explorateur-de-fichiers)
 - [Texte](#texte)
 
@@ -37,12 +38,23 @@
 |`alt` + `echap`|Parcourir selon l'ordre d’ouverture|
 |`ctrl` + `clic sur l’application sur la barre des tâches`|**Basculer entre différentes instances de l'application**|
 
+# Excel [⬏](#sommaire)
+|Raccourci|Action|
+|:-:|-|
+|`ctrl` + `⇧` + `L`|Filtres|
+|`ctrl` + `⇧` + `espace`|Sélectionner l'intégralité du tableau courant|
+|`` + `` + ``||
+|`alt` + `=`|Somme d'une sélection|
+|`alt` + `-`|Moyenne  d'une sélection|
+|`` + ``||
+|``||
+|``||
 
 # Explorateur de fichiers [⬏](#sommaire)
 |Raccourci|Action|
 |:-:|-|
-|`alt` + `p`|Volet de prévisualisation|
-|`alt` + `⇧` + `p`|Volet d'informations|
+|`alt` + `P`|Volet de prévisualisation|
+|`alt` + `⇧` + `P`|Volet d'informations|
 |`ctrl` + `⇧` + `6`[^2]|Afficher les détails des fichiers.|
 |`⇧` + `clic droit`|Menu contextuel étendu|
 |`ctrl` + `+`|Redimensionner toutes les colonnes pour les ajuster au texte[^3].|
