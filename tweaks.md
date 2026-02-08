@@ -16,7 +16,7 @@ Pour empêcher Microsoft Edge de fonctionner en arrière-plan après sa fermetur
 | Réduire la fréquence des sauvegardes de session à 2 minutes | `browser.sessionstore.interval` | `120000` |
 | Activer l'onglet "Firefox View" | `browser.tabs.firefox-view` | `true` |
 | Ne pas recharger les onglets en arrière-plan | `browser.tabs.loadinBackground` | `false` |
-| Activer la vue divisée | `browser.tabs.splitView.enabled` | `true` |
+| Activer la vue scindée | `browser.tabs.splitView.enabled` | `true` |
 | Désactiver l’autoplay des vidéos/médias | `media.autoplay.enabled.user-gestures-needed` & `media.autoplay.allow-muted` | `true` & `false` |
 # Brave
 `brave://flags`
