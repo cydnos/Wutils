@@ -10,12 +10,29 @@ Pour empêcher Microsoft Edge de fonctionner en arrière-plan après sa fermetur
 # [Firefox](https://forum.malekal.com/viewtopic.php?t=27164)
 > [about:config](https://kb.mozillazine.org/About:config_entries)
 
-- Ne pas recharger les onglets en arrière-plan
-```
-browser.tabs.loadinBackground
-```
+| Comportement | Clé | Valeur |
+|-|:-:|-|
+| Ne pas rafraîchir l'onglet courant | `accessibility.blockautrefresh` | `true` |
+| Réduire la fréquence des sauvegardes de session à 2 minutes | `browser.sessionstore.interval` | `120000` |
+| Activer l'onglet "Firefox View" | `browser.tabs.firefox-view` | `true` |
+| Ne pas recharger les onglets en arrière-plan | `browser.tabs.loadinBackground` | `false` |
+| Activer la vue divisée | `browser.tabs.splitView.enabled` | `true` |
+| Désactiver l’autoplay des vidéos/médias | `media.autoplay.enabled.user-gestures-needed` & `media.autoplay.allow-muted` | `true` & `false` |
+|  | `` | `` |
 
-- Ne pas rafraîchir l'onglet courant
-```
-accessibility.blockautrefresh
-```
+# Brave
+`brave://flags`
+
+
+| Comportement | Clé | Valeur |
+|-|:-:|-|
+| Autoriser l'utilisation de plusieurs threads afin d'accélérer le téléchargement. | `Parallel Downloading` | `Enabled` |
+|Enables Playlist – Mac, Windows, Linux, Android| `Playlist` | `Enabled` |
+| Use fake UA for playlist – Mac, Windows, Linux, Android | `PlaylistFakeUA` | `Enabled` |
+| Gestion de l'interface tactile. Inutile sur écrans non tactiles. | `Touch UI Layout` | `Disabled` |
+
+
+
+<!-- 
+|  | `` | `` |
+-->
