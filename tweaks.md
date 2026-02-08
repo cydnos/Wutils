@@ -18,8 +18,6 @@ Pour empêcher Microsoft Edge de fonctionner en arrière-plan après sa fermetur
 | Ne pas recharger les onglets en arrière-plan | `browser.tabs.loadinBackground` | `false` |
 | Activer la vue divisée | `browser.tabs.splitView.enabled` | `true` |
 | Désactiver l’autoplay des vidéos/médias | `media.autoplay.enabled.user-gestures-needed` & `media.autoplay.allow-muted` | `true` & `false` |
-|  | `` | `` |
-
 # Brave
 `brave://flags`
 
@@ -34,5 +32,6 @@ Pour empêcher Microsoft Edge de fonctionner en arrière-plan après sa fermetur
 
 
 <!-- 
+|  | `` | `` |
 |  | `` | `` |
 -->
