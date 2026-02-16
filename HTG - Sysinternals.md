@@ -1,6 +1,6 @@
 # Table of Contents
 
-- [01 What Are the SysInternals Tools and How Do You Use Them?](#01-what-are-the-sysinternals-tools-and-how-do-you-use-them-)
+- 01 [What Are the SysInternals Tools and How Do You Use Them?](#01-what-are-the-sysinternals-tools-and-how-do-you-use-them)
   - [How Do You Get the Tools?](#how-do-you-get-the-tools)
   - [Running the Tools from SysInternals Live](#running-the-tools-from-sysinternals-live)
 
