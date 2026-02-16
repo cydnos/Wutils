@@ -123,11 +123,6 @@ This stack has not yet overflowed.
 
 What does all this mean? Wait until lessons 2 and 3, where we will do our best to explain the concepts to you, and more importantly, explain why you’d want to bother digging this deep.
 
-The Best Tech Newsletter Anywhere
-
-Join **425,000** subscribers and get a daily digest of features, articles, news, and trivia.
-
-By submitting your email, you agree to the [Terms of Use](https://web.archive.org/web/20230604182842mp_/https://www.howtogeek.com/terms-of-use) and [Privacy Policy](https://web.archive.org/web/20230604182842mp_/https://www.howtogeek.com/privacy-policy).
 
 ## How Do You Get the Tools?
 
@@ -958,11 +953,6 @@ The important switches for our purposes are the /TIMER:0 switch, which sets the 
 
 _Note:_ the /POPUP switch and the /TASKBAR switch will stick BGInfo into your system tray and pop up a dialog with system information whenever you click on it, which is definitely a very useful option.
 
-The Best Tech Newsletter Anywhere
-
-Join **425,000** subscribers and get a daily digest of features, articles, news, and trivia.
-
-By submitting your email, you agree to the [Terms of Use](https://web.archive.org/web/20230320163724mp_/https://www.howtogeek.com/terms-of-use) and [Privacy Policy](https://web.archive.org/web/20230320163724mp_/https://www.howtogeek.com/privacy-policy).
 
 For example, if we save BGInfo.exe into the C:\\Users\\Lowell\\bin\\ folder and put the configuration as config.bgi into the same folder, we’d use this as the command line:
 
