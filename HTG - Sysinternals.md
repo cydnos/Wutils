@@ -4,7 +4,7 @@
   - [How Do You Get the Tools?](#how-do-you-get-the-tools)
   - [Running the Tools from SysInternals Live](#running-the-tools-from-sysinternals-live)
 
-- [02 Understanding Process Explorer](#02-understanding-process-explorer)
+- 02 [Understanding Process Explorer](#02-understanding-process-explorer)
 	- [So What Can Process Explorer Do?](#so-what-can-process-explorer-do)
 	- [Understanding The Tree View](#understanding-the-tree-view)
 	- [Understanding All Those Colors](#understanding-all-those-colors)
@@ -15,27 +15,27 @@
 	- [Using Process Explorer as an Awesome Tray Icon Monitor](#using-process-explorer-as-an-awesome-tray-icon-monitor)
 	- [Using Process Explorer to Quickly Search VirusTotal](#using-process-explorer-to-quickly-search-virustotal)
 
-- [03 Using Process Explorer to Troubleshoot and Diagnose](#03-using-process-explorer-to-troubleshoot-and-diagnose)
+- 03 [Using Process Explorer to Troubleshoot and Diagnose](#03-using-process-explorer-to-troubleshoot-and-diagnose)
 	- [Investigating the Conduit Search Malware](#investigating-the-conduit-search-malware)
 	- [Dealing with Locked Files or Folders](#dealing-with-locked-files-or-folders)
 	- [Researching Processes that Look Safe but Aren't](#researching-processes-that-look-safe-but-arent)
 
-- [04 Understanding Process Monitor](#04-understanding-process-monitor)
+- 04 [Understanding Process Monitor](#04-understanding-process-monitor)
 	- [The Events that Process Monitor Captures](#the-events-that-process-monitor-captures)
 	- [The Process Monitor Interface](#the-process-monitor-interface)
 
-- [05 Using Process Monitor to Troubleshoot and Find Registry Hacks](#05-using-process-monitor-to-troubleshoot-and-find-registry-hacks)
+- 05 [Using Process Monitor to Troubleshoot and Find Registry Hacks](#05-using-process-monitor-to-troubleshoot-and-find-registry-hacks)
 	- [Using Process Explorer to Find Registry Keys for Common Settings](#using-process-explorer-to-find-registry-keys-for-common-settings)
 	- [Troubleshooting Problems with Process Monitor](#troubleshooting-problems-with-process-monitor)
 
-- [06 Using Autoruns to Deal with Startup Processes and Malware](#06-using-autoruns-to-deal-with-startup-processes-and-malware)
+- 06 [Using Autoruns to Deal with Startup Processes and Malware](#06-using-autoruns-to-deal-with-startup-processes-and-malware)
 	- [Working With the Autoruns Interface](#working-with-the-autoruns-interface)
 	- [Looking at the Tabs](#looking-at-the-tabs)
 
-- [07 Using BgInfo to Display System Information on the Desktop](#07-using-bginfo-to-display-system-information-on-the-desktop)
+- 07 [Using BgInfo to Display System Information on the Desktop](#07-using-bginfo-to-display-system-information-on-the-desktop)
 	- [Using the BGInfo Interface](#using-the-bginfo-interface)
 
-- [08 Using PsTools to Control Other PCs from the Command Line](#08-using-pstools-to-control-other-pcs-from-the-command-line)
+- 08 [Using PsTools to Control Other PCs from the Command Line](#08-using-pstools-to-control-other-pcs-from-the-command-line)
 	- [Connecting to Remote Computers (Syntax for All Utilities)](#connecting-to-remote-computers--syntax-for-all-utilities)
 	- [Configuring Remote Administration Access](#configuring-remote-administration-access)
 	- [PsExec](#psexec)
@@ -53,7 +53,7 @@
 	- [PsSuspend](#pssuspend)
 	- [When the Utilities Won't Connect Because of Remote Registry](#when-the-utilities-wont-connect-because-of-remote-registry)
 
-- [09 Analyzing and Managing Your Files, Folders, and Drives](#09-analyzing-and-managing-your-files-folders-and-drives)
+- 09 [Analyzing and Managing Your Files, Folders, and Drives](#09-analyzing-and-managing-your-files-folders-and-drives)
 	- [Streams Finds and Displays Hidden NTFS Streams](#streams-finds-and-displays-hidden-ntfs-streams)
 	- [SigCheck Analyzes Files That Aren't Digitally Signed (Like Malware)](#sigcheck-analyzes-files-that-arent-digitally-signed-like-malware)
 	- [SDelete Securely Deletes Files](#sdelete-securely-deletes-files)
@@ -70,7 +70,7 @@
 	- [Disk Monitor Shows You Real-Time Hard Drive Activity](#disk-monitor-shows-you-real-time-hard-drive-activity)
 	- [VolumeID Changes the Drive's Serial Number](#volumeid-changes-the-drives-serial-number)
 
-- [10 Wrapping Up and Using the Tools Together](#10-wrapping-up-and-using-the-tools-together)
+- 10 [Wrapping Up and Using the Tools Together](#10-wrapping-up-and-using-the-tools-together)
 	- [Which Tool Should You Use?](#which-tool-should-you-use)
 	- [TCPView](#tcpview)
 	- [Coreinfo](#coreinfo)
