@@ -390,7 +390,7 @@ This is where we turn to Process Explorer to do some investigation. First, we’
 
 Now you can simply select the appropriate process, which in this case was one of the three that run automatically by the Windows Service that Conduit installs. How did I know that it was a Windows Service that restarts it? Because the color of that row is pink, of course. Armed with that knowledge, I could always go stop or delete the service (though in this particular case, you can simply uninstall from `Uninstall Programs` in `Control Panel`).
 
-Now that you’ve selected the process, you can use the `CTRL + H` or `CTRL + D` shortcut keys to open the Handles view or the DLLs view, or you can use the `View > Lower Pane View` menu to do it.
+Now that you’ve selected the process, you can use the `CTRL + H` or `CTRL + D` shortcut keys to open the Handles view or the DLLs view, or you can use the `View -> Lower Pane View` menu to do it.
 
 > _Note:_ in the world of Windows, a “handle” is an integer value that is used to uniquely identify a resource in memory like a window, an open file, a process, or many other things. Each open application window on your computer has a unique “window handle”, for example, that can be used to reference it.
 > 
