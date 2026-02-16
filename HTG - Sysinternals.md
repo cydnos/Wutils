@@ -1,4 +1,92 @@
+# Table of Contents
 
+## [01 What Are the SysInternals Tools and How Do You Use Them?](#01-what-are-the-sysinternals-tools-and-how-do-you-use-them)
+- [How Do You Get the Tools?](#how-do-you-get-the-tools)
+- [Running the Tools from SysInternals Live](#running-the-tools-from-sysinternals-live)
+
+## [02 Understanding Process Explorer](#02-understanding-process-explorer)
+- [So What Can Process Explorer Do?](#so-what-can-process-explorer-do)
+- [Understanding The Tree View](#understanding-the-tree-view)
+- [Understanding All Those Colors](#understanding-all-those-colors)
+- [Verifying Application Identity](#verifying-application-identity)
+- [Taking Action on a Process](#taking-action-on-a-process)
+- [Running as Administrator](#running-as-administrator)
+- [Using Process Explorer to Replace Task Manager](#using-process-explorer-to-replace-task-manager)
+- [Using Process Explorer as an Awesome Tray Icon Monitor](#using-process-explorer-as-an-awesome-tray-icon-monitor)
+- [Using Process Explorer to Quickly Search VirusTotal](#using-process-explorer-to-quickly-search-virustotal)
+
+## [03 Using Process Explorer to Troubleshoot and Diagnose](#03-using-process-explorer-to-troubleshoot-and-diagnose)
+- [Investigating the Conduit Search Malware](#investigating-the-conduit-search-malware)
+- [Dealing with Locked Files or Folders](#dealing-with-locked-files-or-folders)
+- [Researching Processes that Look Safe but Aren't](#researching-processes-that-look-safe-but-arent)
+
+## [04 Understanding Process Monitor](#04-understanding-process-monitor)
+- [The Events that Process Monitor Captures](#the-events-that-process-monitor-captures)
+- [The Process Monitor Interface](#the-process-monitor-interface)
+
+## [05 Using Process Monitor to Troubleshoot and Find Registry Hacks](#05-using-process-monitor-to-troubleshoot-and-find-registry-hacks)
+- [Using Process Explorer to Find Registry Keys for Common Settings](#using-process-explorer-to-find-registry-keys-for-common-settings)
+- [Troubleshooting Problems with Process Monitor](#troubleshooting-problems-with-process-monitor)
+
+## [06 Using Autoruns to Deal with Startup Processes and Malware](#06-using-autoruns-to-deal-with-startup-processes-and-malware)
+- [Working With the Autoruns Interface](#working-with-the-autoruns-interface)
+- [Looking at the Tabs](#looking-at-the-tabs)
+
+## [07 Using BgInfo to Display System Information on the Desktop](#07-using-bginfo-to-display-system-information-on-the-desktop)
+- [Using the BGInfo Interface](#using-the-bginfo-interface)
+
+## [08 Using PsTools to Control Other PCs from the Command Line](#08-using-pstools-to-control-other-pcs-from-the-command-line)
+- [Connecting to Remote Computers (Syntax for All Utilities)](#connecting-to-remote-computers--syntax-for-all-utilities)
+- [Configuring Remote Administration Access](#configuring-remote-administration-access)
+- [PsExec](#psexec)
+- [PsFile](#psfile)
+- [PsGetSid](#psgetsid)
+- [PsInfo](#psinfo)
+- [PsKill](#pskill)
+- [PsList](#pslist)
+- [PsLoggedOn](#psloggedon)
+- [PsLogList](#psloglist)
+- [PsPasswd](#pspasswd)
+- [PsPing](#psping)
+- [PsService](#psservice)
+- [PsShutdown](#psshutdown)
+- [PsSuspend](#pssuspend)
+- [When the Utilities Won't Connect Because of Remote Registry](#when-the-utilities-wont-connect-because-of-remote-registry)
+
+## [09 Analyzing and Managing Your Files, Folders, and Drives](#09-analyzing-and-managing-your-files-folders-and-drives)
+- [Streams Finds and Displays Hidden NTFS Streams](#streams-finds-and-displays-hidden-ntfs-streams)
+- [SigCheck Analyzes Files That Aren't Digitally Signed (Like Malware)](#sigcheck-analyzes-files-that-arent-digitally-signed-like-malware)
+- [SDelete Securely Deletes Files](#sdelete-securely-deletes-files)
+- [Contig Defragments One or Many Individual Files](#contig-defragments-one-or-many-individual-files)
+- [du Shows Disk Usage](#du-shows-disk-usage)
+- [PendMoves Displays Files Moving on Next Reboot](#pendmoves-displays-files-moving-on-next-reboot)
+- [MoveFiles Moves System Files when You Reboot](#movefiles-moves-system-files-when-you-reboot)
+- [Junction Creates Symbolic Links](#junction-creates-symbolic-links)
+- [FindLinks Finds Hard Links to Files](#findlinks-finds-hard-links-to-files)
+- [DiskView Displays Disk Structure](#diskview-displays-disk-structure)
+- [Disk2vhd Turns PCs into Virtual Hard Drives](#disk2vhd-turns-pcs-into-virtual-hard-drives)
+- [PageDefrag is Obsolete](#pagedefrag-is-obsolete)
+- [Sync Writes Cached Data to Your Disk](#sync-writes-cached-data-to-your-disk)
+- [Disk Monitor Shows You Real-Time Hard Drive Activity](#disk-monitor-shows-you-real-time-hard-drive-activity)
+- [VolumeID Changes the Drive's Serial Number](#volumeid-changes-the-drives-serial-number)
+
+## [10 Wrapping Up and Using the Tools Together](#10-wrapping-up-and-using-the-tools-together)
+- [Which Tool Should You Use?](#which-tool-should-you-use)
+- [TCPView](#tcpview)
+- [Coreinfo](#coreinfo)
+- [Handle](#handle)
+- [ListDlls](#listdlls)
+- [RamMap](#rammap)
+- [Strings Finds Human-Readable Text in Apps and DLLs](#strings-finds-human-readable-text-in-apps-and-dlls)
+- [RegJump](#regjump)
+- [Hex2Dec](#hex2dec)
+- [Autologon](#autologon)
+- [AccessChk](#accesschk)
+- [AccessEnum](#accessenum)
+- [ShellRunAs](#shellrunas)
+- [RegDelNull](#regdelnull)
+- [Ctrl2Cap](#ctrl2cap)
+- [BlueScreen Screen Saver](#bluescreen-screen-saver)
 # 01 What Are the SysInternals Tools and How Do You Use Them?
 
 ![SysInternals 1](https://web.archive.org/web/20230604182842im_/https://www.howtogeek.com/wp-content/uploads/2014/03/gksys1.jpg?width=1198&trim=1,1&bg-color=000&pad=1,1)
@@ -545,7 +633,7 @@ Imagine you are working on somebody’s really old and lousy computer, and you w
 
 And of course, you could also just remotely talk somebody through running Process Monitor, doing a scan, saving the file, and then sending it to you for analysis. That way you don’t even have to show up and see them in person.
 
-# 5 Using Process Monitor to Troubleshoot and Find Registry Hacks
+# 05 Using Process Monitor to Troubleshoot and Find Registry Hacks
 
 ![SysInternals 5](https://web.archive.org/web/20230601055111im_/https://www.howtogeek.com/wp-content/uploads/2014/03/gksys5.jpg?width=1198&trim=1,1&bg-color=000&pad=1,1)
 
@@ -638,7 +726,7 @@ Starting on Monday with the next lesson, we’ll examine many of the other utili
 
 Stay tuned for tomorrow’s lesson, where we will put together all of the knowledge that we’ve gained and show how to use Process Monitor in the real world to accomplish some fun and interesting things.
 
-# 6 Using Autoruns to Deal with Startup Processes and Malware
+# 06 Using Autoruns to Deal with Startup Processes and Malware
 
 ![](https://web.archive.org/web/20230615023957im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_5338bbd9d7674.png?width=1198&trim=1,1&bg-color=000&pad=1,1)
 
@@ -830,7 +918,7 @@ If you have any sidebar gadgets in Vista or Windows 7, you will see them here, a
 
 That’s it for Autoruns, but stay tuned tomorrow when we teach you about Bginfo and displaying system information on your desktop.
 
-# 7 Using BgInfo to Display System Information on the Desktop
+# 07 Using BgInfo to Display System Information on the Desktop
 
 ![SysInternals 7](https://web.archive.org/web/20230320163724im_/https://www.howtogeek.com/wp-content/uploads/2014/04/gksys7.jpg?width=1198&trim=1,1&bg-color=000&pad=1,1)
 
@@ -948,7 +1036,7 @@ For the truly advanced users, you can also create a database on your network and
 
 Tomorrow we’re going to delve back into the super geeky world of SysInternals with a thorough examination of some of the command line tools, so be sure to check back for the rest of the series.
 
-# 8 Using PsTools to Control Other PCs from the Command Line
+# 08 Using PsTools to Control Other PCs from the Command Line
 
 ![SysInternals 8](https://web.archive.org/web/20230607043051im_/https://www.howtogeek.com/wp-content/uploads/2014/04/gksys8.jpg?width=1198&trim=1,1&bg-color=000&pad=1,1)
 
@@ -1255,7 +1343,7 @@ Simple solutions are the best, aren’t they?
 
 Make sure to join us tomorrow, when we cover file and disk utilities, and some more interesting things.
 
-# 9 Analyzing and Managing Your Files, Folders, and Drives
+# 09 Analyzing and Managing Your Files, Folders, and Drives
 
 ![SysInternals 9](https://web.archive.org/web/20230603003739im_/https://www.howtogeek.com/wp-content/uploads/2014/04/gksys9.jpg?width=1198&trim=1,1&bg-color=000&pad=1,1)
 
