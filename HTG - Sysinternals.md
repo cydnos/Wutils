@@ -115,7 +115,7 @@ Process Explorer is probably the most useful tool in the kit.
 
 Most of these tools are going to require administrator access on your computer, so you’d be wise to test them out in a virtual machine or a test computer if you aren’t sure what you are doing — these are some heavy duty tools.
 
-For example, say you have a really slow PC to troubleshoot, and you want to inspect all of the threads for a particular application, and then you want to see the entire stack for one of those threads to see exactly what DLLs and functions are being called. Process Explorer makes this trivial — you can simply double-click on the process, flip over to the Threads tab, and then click the Stack button.
+For example, say you have a really slow PC to troubleshoot, and you want to inspect all of the threads for a particular application, and then you want to see the entire stack for one of those threads to see exactly what DLLs and functions are being called. Process Explorer makes this trivial — you can simply double-click on the process, flip over to the `Threads` tab, and then click the `Stack` button.
 
 ![](https://web.archive.org/web/20230604182842im_/https://www.howtogeek.com/wp-content/uploads/2014/03/Windows_8_1__More_crapware__conduit__etc___Running_.jpg?trim=1,1&bg-color=000&pad=1,1)
 
@@ -136,7 +136,7 @@ If you don’t want to be troubled to download and unzip and then run the applic
 
 Basically what happened is that a number of years ago, the SysInternals guys were curious whether they could find a new way to distribute their software… so they created a Windows file share off their server and gave everybody on the internet access to it.
 
-So you can simply type \\\\live.sysinternals.com\\tools into the Windows Run box after pulling that up with the WIN + R shortcut key, and you’ll be able to browse their file share and look around.
+So you can simply type `\\live.sysinternals.com\\tools` into the Windows Run box after pulling that up with the `WIN + R` shortcut key, and you’ll be able to browse their file share and look around.
 
 _Note:_ the \\\\server\\share format is called a UNC (Universal Naming Convention) path, and it works just about anywhere in Windows. You can utilize it in the explorer address bar, file open and save dialog boxes, or anywhere that you’d normally use a file path.
 
@@ -152,7 +152,7 @@ Just follow this format to directly launch one of the utilities through the Run 
 
 > \\\\live.sysinternals.com\\tools\\<toolname>
 
-For instance, to launch Process Explorer, the executable name is procexp.exe, so you can use \\\\live.sysinternals.com\\tools\\procexp.exe to launch Process Explorer, or change procexp.exe to procmon.exe to launch Process Monitor instead.
+For instance, to launch Process Explorer, the executable name is procexp.exe, so you can use `\\live.sysinternals.com\\tools\\procexp.exe` to launch Process Explorer, or change procexp.exe to procmon.exe to launch Process Monitor instead.
 
 ![](https://web.archive.org/web/20230604182842im_/https://www.howtogeek.com/wp-content/uploads/2014/03/Windows_8_1__More_crapware__conduit__etc___Running__1.png?trim=1,1&bg-color=000&pad=1,1)
 
@@ -219,9 +219,9 @@ The initial display gives you a set of columns that include:
 
 You can customize these columns and add many other options, or you can just click on any of the columns to sort by that field. If you’ve ever used Task Manager before, you’ve probably sorted by Memory or CPU, and you can do that here as well.
 
-Clicking on Process will flip between sorting by the process name, or going back to the default tree view, which is very useful once you get used to it.
+Clicking on `Process` will flip between sorting by the process name, or going back to the default tree view, which is very useful once you get used to it.
 
-The view is updated once per second, but you can go to View -> Update Speed and customize how often it updates, the lowest being 0.5 seconds and the top level being 10 seconds. If you are using it for troubleshooting the default value is probably fine, but if you want to use it as a CPU monitor sitting in the system tray, 5 or 10 seconds might use less CPU while it runs in the background.
+The view is updated once per second, but you can go to `View -> Update Speed` and customize how often it updates, the lowest being 0.5 seconds and the top level being 10 seconds. If you are using it for troubleshooting the default value is probably fine, but if you want to use it as a CPU monitor sitting in the system tray, 5 or 10 seconds might use less CPU while it runs in the background.
 
 You can also pause the view under the same sub-menu, or by simply hitting the Space bar. This will freeze the view as a snapshot in time, which can be useful if you are trying to identify a process that starts and quickly dies, or if you have decided to sort by CPU usage and all the rows keep jumping around.
 
@@ -231,7 +231,7 @@ In the case of a quickly closing process, however, you would want to add extra c
 
 There are definitely a lot of colors in a typical Process Explorer list, which can be a little confusing for the beginner geek. It’s really important to learn what all these colors mean, because they aren’t there just for show — they each mean something important.
 
-Whenever you can’t remember what one of the colors means, you can go to Options -> Configure Colors on the menu to pull up the Color Selection dialog. This is basically a quick cheat sheet to what everything means. Keep reading, since we’re going to explain it here as well.
+Whenever you can’t remember what one of the colors means, you can go to `Options -> Configure Colors` on the menu to pull up the Color Selection dialog. This is basically a quick cheat sheet to what everything means. Keep reading, since we’re going to explain it here as well.
 
 ![Windows 8](https://web.archive.org/web/20230529210709im_/https://www.howtogeek.com/wp-content/uploads/2014/03/Windows_8_1__More_crapware__conduit__etc___Running_1.jpg?trim=1,1&bg-color=000&pad=1,1)
 
@@ -247,11 +247,11 @@ Based on the colors in the picture above, here is what each of the selected item
 
 Since there is obviously some overlap between these different scenarios, the colors will be applied in an order of precedence. If a process is a service and is suspended, it will display in dark gray because that color is more important.
 
-From what we’ve learned while researching, the order is Suspended > Packed > Immersive > Services -> Own Processes.
+From what we’ve learned while researching, the order is `Suspended` → `Packed` → `Immersive` → `Services` → `Own Processes`.
 
 ## Verifying Application Identity
 
-One really useful option that we’re surprised isn’t enabled by default is found at Options -> Verify Image Signatures.
+One really useful option that we’re surprised isn’t enabled by default is found at `Options -> Verify Image Signatures`.
 
 ![](https://web.archive.org/web/20230529210709im_/https://www.howtogeek.com/wp-content/uploads/2014/03/Windows_8_1__VM_with_conduit_and_malware_for_article___Running_.jpg?trim=1,1&bg-color=000&pad=1,1)
 
@@ -306,11 +306,11 @@ Process Explorer has long been used as a powerful replacement for the previously
 
 _Note:_ Windows 8’s Task Manager is greatly improved from previous versions. It’s still not as powerful as Process Explorer, but it’s probably easier for regular people to use. So don’t change mom’s computer to default to Process Explorer.
 
-To make Process Explorer replace Task Manager, all you have to do is choose the Options -> Replace Task Manager option from the menu. That’s it.
+To make Process Explorer replace Task Manager, all you have to do is choose the `Options -> Replace Task Manager` option from the menu. That’s it.
 
 ![](https://web.archive.org/web/20230529210709im_/https://www.howtogeek.com/wp-content/uploads/2014/03/win8taskm.jpg?trim=1,1&bg-color=000&pad=1,1)
 
-Once you’ve done that, using CTRL + SHIFT + ESC or right-clicking on the Taskbar will both launch Process Explorer rather than Task Manager. Easy, right?
+Once you’ve done that, using `CTRL + SHIFT + ESC` or right-clicking on the Taskbar will both launch Process Explorer rather than Task Manager. Easy, right?
 
 _Warning_: if you do replace Task Manager, make absolutely certain that you’ve put Process Explorer in a place that you won’t be accidentally moving or deleting the file. Otherwise you’ll be stuck with a system that can’t launch any Task Manager.
 
@@ -324,7 +324,7 @@ To set this up, open up the Options menu, go to the Tray Icons section, and then
 
 ![](https://web.archive.org/web/20230529210709im_/https://www.howtogeek.com/wp-content/uploads/2014/03/Windows_8_1__More_crapware__conduit__etc___Running_2.jpg?trim=1,1&bg-color=000&pad=1,1)
 
-You could just run Process Explorer every time you start running your computer, and then minimize it to the system tray so it will always be there for you. And, of course, if you used the option to replace Task Manager, you can quickly access it any time with a shortcut key – though you might want to use the “Allow Only One Instance” option to make sure you don’t open a bunch of separate windows.
+You could just run Process Explorer every time you start running your computer, and then minimize it to the system tray so it will always be there for you. And, of course, if you used the option to replace Task Manager, you can quickly access it any time with a shortcut key – though you might want to use the `Allow Only One Instance` option to make sure you don’t open a bunch of separate windows.
 
 ## Using Process Explorer to Quickly Search VirusTotal
 
@@ -388,19 +388,19 @@ This is where we turn to Process Explorer to do some investigation. First, we’
 
 ![](https://web.archive.org/web/20230603005244im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_53325b41d6649.png?trim=1,1&bg-color=000&pad=1,1)
 
-Now you can simply select the appropriate process, which in this case was one of the three that run automatically by the Windows Service that Conduit installs. How did I know that it was a Windows Service that restarts it? Because the color of that row is pink, of course. Armed with that knowledge, I could always go stop or delete the service (though in this particular case, you can simply uninstall from Uninstall Programs in Control Panel).
+Now you can simply select the appropriate process, which in this case was one of the three that run automatically by the Windows Service that Conduit installs. How did I know that it was a Windows Service that restarts it? Because the color of that row is pink, of course. Armed with that knowledge, I could always go stop or delete the service (though in this particular case, you can simply uninstall from `Uninstall Programs` in `Control Panel`).
 
-Now that you’ve selected the process, you can use the CTRL + H or CTRL + D shortcut keys to open the Handles view or the DLLs view, or you can use the View -> Lower Pane View menu to do it.
+Now that you’ve selected the process, you can use the `CTRL + H` or `CTRL + D` shortcut keys to open the Handles view or the DLLs view, or you can use the `View > Lower Pane View` menu to do it.
 
 > _Note:_ in the world of Windows, a “handle” is an integer value that is used to uniquely identify a resource in memory like a window, an open file, a process, or many other things. Each open application window on your computer has a unique “window handle”, for example, that can be used to reference it.
 > 
-> DLLs, or dynamic link libraries, are shared pieces of compiled code that are stored in a separate file to be shared among multiple applications. For instance, instead of having every application write their own File Open / Save dialogs, all applications can simply use the common dialog code provided by Windows in the comdlg32.dll file.
+> DLLs, or dynamic link libraries, are shared pieces of compiled code that are stored in a separate file to be shared among multiple applications. For instance, instead of having every application write their own File Open / Save dialogs, all applications can simply use the common dialog code provided by Windows in the `comdlg32.dll` file.
 
 Looking through the list of handles for a few minutes brought us a little bit closer to what was going on, because we found handles to Internet Explorer and Chrome, both of which are currently open on the test system. We’ve definitely confirmed that Search Protect is doing something to our open browser windows, but we’ll need to do a little more research to figure out exactly what.
 
 ![](https://web.archive.org/web/20230603005244im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_533297984c836.png?trim=1,1&bg-color=000&pad=1,1)
 
-The next thing to do is double-click the process in the list to open up the details view, and then flip over to the Image tab, which will give you information about the full path to the executable, the command line, and even the working folder. We’ll click the Explore button to take a look at the installation folder and see what else is hiding there.
+The next thing to do is double-click the process in the list to open up the details view, and then flip over to the `Image` tab, which will give you information about the full path to the executable, the command line, and even the working folder. We’ll click the `Explore` button to take a look at the installation folder and see what else is hiding there.
 
 ![](https://web.archive.org/web/20230603005244im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_53325b291b466.png?trim=1,1&bg-color=000&pad=1,1)
 
@@ -408,7 +408,7 @@ Interesting! We’ve found a number of DLL files here, but for some weird reason
 
 ![](https://web.archive.org/web/20230603005244im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_53324976c4561.png?trim=1,1&bg-color=000&pad=1,1)
 
-Any time you want to see whether a DLL file is currently being used by any application on your system, you can pop up the search pane by going to the Find menu, hitting CTRL + F, or just clicking the binoculars icon on the toolbar. Now type in part of the name of the DLL, or even the full name if you’d like.
+Any time you want to see whether a DLL file is currently being used by any application on your system, you can pop up the search pane by going to the Find menu, hitting `CTRL + F`, or just clicking the binoculars icon on the toolbar. Now type in part of the name of the DLL, or even the full name if you’d like.
 
 We chose to search for just the beginning, “SPVC”, since that was the common tie between them all, and sure enough, it looks like those DLLs are being loaded directly into each of the browser processes running on our computer.
 
@@ -432,13 +432,13 @@ Since it’s unlikely that you’ll be investigating malware all the time, it’
 
 ![](https://web.archive.org/web/20230603005244im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_53326475ab4b2.png?trim=1,1&bg-color=000&pad=1,1)
 
-When you get an error like that one, just head over to Process Explorer, open up the search with CTRL + F or the icon, and then type in the name of the folder listed above (or more descriptive full path if the name is very vague).
+When you get an error like that one, just head over to Process Explorer, open up the search with `CTRL + F` or the icon, and then type in the name of the folder listed above (or more descriptive full path if the name is very vague).
 
 You’ll very quickly see a process in the list that has your file or folder open, and you can double-click on it to identify the process in the list.
 
 ![](https://web.archive.org/web/20230603005244im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_533265154aca3.png?trim=1,1&bg-color=000&pad=1,1)
 
-Your immediate reaction might be to just close that process, but you don’t necessarily have to do that. You can also right-click on the file or folder in the list of handles (Use the CTRL + H option to bring up the Handles list) and choose the Close Handle option. That resource is now unlocked!
+Your immediate reaction might be to just close that process, but you don’t necessarily have to do that. You can also right-click on the file or folder in the list of handles (Use the `CTRL + H` option to bring up the Handles list) and choose the `Close Handle` option. That resource is now unlocked!
 
 ![](https://web.archive.org/web/20230603005244im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_53326594f08f1.png?trim=1,1&bg-color=000&pad=1,1)
 
@@ -448,9 +448,9 @@ _Note:_ If you’re deleting something, this is a perfectly fine option, but if
 
 During our malware research we’ve noticed another problem that is becoming more prevalent, so it is wise to keep an eye on it in the future. What is that problem? Malware is hiding behind legitimate Windows processes, and it’s doing a good job.
 
-The problem is the Windows rundll32.exe utility, which can be used to arbitrarily run functions from DLL files. Since this utility is signed by Microsoft it shows up as a completely legit process in the list, but in reality what they are doing is just moving all of their malware / adware code into a .DLL file instead of a .EXE file, and then loading up the malware with rundll32.exe instead. In fact, if you see rundll32.exe running as an “own process” in the light blue color shown below, it’s nearly always something that shouldn’t be running.
+The problem is the Windows `rundll32.exe` utility, which can be used to arbitrarily run functions from DLL files. Since this utility is signed by Microsoft it shows up as a completely legit process in the list, but in reality what they are doing is just moving all of their malware / adware code into a .DLL file instead of a .EXE file, and then loading up the malware with `rundll32.exe` instead. **In fact, if you see `rundll32.exe` running as an “own process” in the light blue color shown below, it’s nearly always something that shouldn’t be running.**
 
-In the example below, you can see that even though we used the Verified Signer feature to validate that item, when we hover over it and look at the full path, it is actually loading up a DLL that turns out to be part of an adware product.
+In the example below, you can see that even though we used the `Verified Signer` feature to validate that item, when we hover over it and look at the full path, it is actually loading up a DLL that turns out to be part of an adware product.
 
 _Note:_ before you start screaming about running an anti-virus scan, we’ll note that we did, and it didn’t come back with anything. Much of this crapware, adware, and spyware is ignored by anti-virus utilities.
 
@@ -522,7 +522,7 @@ The default columns show a ton of useful information, but you’ll definitely ne
 *   **Result** – This shows the result of the operation, which codes like SUCCESS or ACCESS DENIED. While you might be tempted to automatically assume that an BUFFER TOO SMALL means something really bad happened, that isn’t actually the case most of the time.
 *   **Detail** – additional information that often doesn’t translate into the regular geek troubleshooting world.
 
-You can also add some additional columns to the default display by going to Options -> Select Columns. This wouldn’t be our recommendation for your first stop when you start testing, but since we’re explaining columns, it’s worth mentioning already.
+You can also add some additional columns to the default display by going to `Options -> Select Columns`. This wouldn’t be our recommendation for your first stop when you start testing, but since we’re explaining columns, it’s worth mentioning already.
 
 ![](https://web.archive.org/web/20230530011155im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_533307a988393.jpg?trim=1,1&bg-color=000&pad=1,1)
 
@@ -538,7 +538,7 @@ It’s worth noting that you can filter by column data even if the column isn’
 
 Viewing things in a list is a great way to quickly see a lot of different data points at once, but it definitely isn’t the easiest way to examine a single piece of data, and there is only so much information you can see in the list. Thankfully you can double-click on any event to access a treasure trove of extra information.
 
-The default Event tab gives you information that is largely similar to what you saw in the list, but will add a bit more information to the party. If you are looking at a file system event, you’ll be able to see certain information like the attributes, file create time, the access that was attempted during a write operation, the number of bytes that were written, and the duration.
+The default `Event` tab gives you information that is largely similar to what you saw in the list, but will add a bit more information to the party. If you are looking at a file system event, you’ll be able to see certain information like the attributes, file create time, the access that was attempted during a write operation, the number of bytes that were written, and the duration.
 
 ![](https://web.archive.org/web/20230530011155im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_533434a4159f0.png?trim=1,1&bg-color=000&pad=1,1)
 
@@ -546,9 +546,9 @@ Switching over to the Process tab gives you lots of great information about the 
 
 ![](https://web.archive.org/web/20230530011155im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_533434c964c10.png?trim=1,1&bg-color=000&pad=1,1)
 
-The Stack tab is something that will sometimes be extremely useful, but often times will not be useful at all. The reason why you would want to look at the stack is so you can troubleshoot by examining the Module column for anything that doesn’t look quite right.
+The `Stack` tab is something that will sometimes be extremely useful, but often times will not be useful at all. The reason why you would want to look at the stack is so you can troubleshoot by examining the `Module` column for anything that doesn’t look quite right.
 
-As an example, imagine that a process was constantly trying to query or access a file that doesn’t exists, but you weren’t sure why. You could look through the Stack tab and see if there were any modules that didn’t look right, and then research them. You might find an out of date component, or even malware, is causing the problem.
+As an example, imagine that a process was constantly trying to query or access a file that doesn’t exists, but you weren’t sure why. You could look through the `Stack` tab and see if there were any modules that didn’t look right, and then research them. You might find an out of date component, or even malware, is causing the problem.
 
 ![](https://web.archive.org/web/20230530011155im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_533434e601b7d.jpg?trim=1,1&bg-color=000&pad=1,1)
 
@@ -574,13 +574,13 @@ In the example for the screenshot above, the application queried the registry fo
 
 ### Jumping to an Event Data Path
 
-All of this information is really great, but nobody wants to investigate by manually browsing to each and every location in the list. Luckily you can right-click on the Path field for an item and use the Jump To option to quickly access that data to see what it contains and try to figure out why the application is requesting that data in the first place.
+All of this information is really great, but nobody wants to investigate by manually browsing to each and every location in the list. Luckily you can right-click on the `Path` field for an item and use the `Jump To` option to quickly access that data to see what it contains and try to figure out why the application is requesting that data in the first place.
 
-_Note:_ you can also use the Search Online feature to quickly search for the name of the process, the registry path, or any other field, which can be really useful when you don’t understand what something is used for.
+_Note:_ you can also use the `Search Online` feature to quickly search for the name of the process, the registry path, or any other field, which can be really useful when you don’t understand what something is used for.
 
 ![](https://web.archive.org/web/20230530011155im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_533437af33b3e.png?trim=1,1&bg-color=000&pad=1,1)
 
-In the example above, you can see that the application we were monitoring was trying to look at a registry value, so we used the Jump To feature, and Process Monitor immediately opened the Registry Editor already focused to that exact key.
+In the example above, you can see that the application we were monitoring was trying to look at a registry value, so we used the `Jump To` feature, and Process Monitor immediately opened the `Registry Editor` already focused to that exact key.
 
 ![](https://web.archive.org/web/20230530011155im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_533437e9c1b8e.png?trim=1,1&bg-color=000&pad=1,1)
 
@@ -594,17 +594,17 @@ In this case, the application was the Conduit search malware, and it was looking
 
 As we’ve mentioned a couple of times already, the filters that Process Monitor provides allow you fine-grained control over what events you are going to be capturing, which translates into much easier work for you to figure out what is important in the list. If you know that you don’t care about all of the events generated by explorer.exe, for example, then you would be wise to just filter them out.
 
-You can very quickly filter by any column using the context menu and using the Include or Exclude features — if you Include an item, the list will only contain events that match that particular item, or any others that you specifically include, but will not contain anything else. If you Exclude an item, everything will show up except for events that match the very specific item that you excluded.
+You can very quickly filter by any column using the context menu and using the `Include` or `Exclude` features — if you `Include` an item, the list will only contain events that match that particular item, or any others that you specifically include, but will not contain anything else. If you `Exclude` an item, everything will show up except for events that match the very specific item that you excluded.
 
 ![](https://web.archive.org/web/20230530011155im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_5334386be1c9e.jpg?trim=1,1&bg-color=000&pad=1,1)
 
-In this case we decided to Include the cltmng.exe process, and now every single thing that we see in the list is related to that process.
+In this case we decided to `Include` the cltmng.exe process, and now every single thing that we see in the list is related to that process.
 
 ![](https://web.archive.org/web/20230530011155im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_53343886d7b17.png?trim=1,1&bg-color=000&pad=1,1)
 
-You can alternatively use the Edit Filter option from the menu, or access the Filters section of the menu to display the list of filters and edit them. You can choose from the drop-down dialogs and match by any of the available fields, choose whether the value you type into the box will be matched exactly, or just “starts with”, or a number of other options. Then you can choose whether to Include or Exclude events that match those criteria.
+You can alternatively use the `Edit Filter` option from the menu, or access the `Filters` section of the menu to display the list of filters and edit them. You can choose from the drop-down dialogs and match by any of the available fields, choose whether the value you type into the box will be matched exactly, or just “starts with”, or a number of other options. Then you can choose whether to `Include` or `Exclude` events that match those criteria.
 
-Just don’t forget to click the Add button once you’ve defined your filter and before you click OK or Apply, because otherwise your new filter won’t actually be activated. Trust us, this is a common mistake!
+Just don’t forget to click the `Add` button once you’ve defined your filter and before you click `OK` or `Apply`, because otherwise your new filter won’t actually be activated. Trust us, this is a common mistake!
 
 ![](https://web.archive.org/web/20230530011155im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_533438b55d186.png?trim=1,1&bg-color=000&pad=1,1)
 
@@ -612,9 +612,9 @@ You can also remove or edit filters by selecting them in the list and then modif
 
 ### Way Too Much Data? Try Dropping Filtered Events
 
-If you know for sure that you have the right filters to look at just the things you really want to see, you might want to consider using the Filter -> Drop Filtered Events feature.
+If you know for sure that you have the right filters to look at just the things you really want to see, you might want to consider using the `Filter -> Drop Filtered Events` feature.
 
-What’s actually going on here is that the instance of Process Monitor is showing only the items that match the filter, but everything else is still being captured in the background, which can be a TON of data after a very short time — note the status bar in the example below that we had running for just a few minutes. If we had the Drop Filtered Events option turned on, it would have only captured just the events we wanted.
+What’s actually going on here is that the instance of Process Monitor is showing only the items that match the filter, but everything else is still being captured in the background, which can be a TON of data after a very short time — note the status bar in the example below that we had running for just a few minutes. If we had the `Drop Filtered Events` option turned on, it would have only captured just the events we wanted.
 
 ![](https://web.archive.org/web/20230530011155im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_53343b7a535c4.png?trim=1,1&bg-color=000&pad=1,1)
 
@@ -622,13 +622,17 @@ There is a big drawback to using this feature though, and that is that you can�
 
 ### Saving Dumps for Later Analysis
 
-There’s one last thing for today’s lesson, and that is the Open / Save feature that we normally wouldn’t highlight on any other application, but in this case it is really important.
+There’s one last thing for today’s lesson, and that is the `Open` / `Save` feature that we normally wouldn’t highlight on any other application, but in this case it is really important.
 
 Imagine you are working on somebody’s really old and lousy computer, and you want to diagnose a particular problem, but the computer is just running way too slow to sit there and deal with it the entire time. You can simply run a Process Monitor scan on their computer, save the data over to a flash drive, and then load up Process Monitor on your blazing fast personal laptop and get to work analyzing what might have happened. You can even go to the coffee shop and analyze from there.
 
 ![](https://web.archive.org/web/20230530011155im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_533444ba2394c.png?trim=1,1&bg-color=000&pad=1,1)
 
 And of course, you could also just remotely talk somebody through running Process Monitor, doing a scan, saving the file, and then sending it to you for analysis. That way you don’t even have to show up and see them in person.
+
+## Next Lesson
+
+Stay tuned for tomorrow’s lesson, where we will put together all of the knowledge that we’ve gained and show how to use Process Monitor in the real world to accomplish some fun and interesting things.
 
 # 05 Using Process Monitor to Troubleshoot and Find Registry Hacks
 
@@ -644,17 +648,17 @@ We’ll start off with today’s lesson by looking at how to find registry keys 
 
 Everybody has clicked a checkbox or changed the value of a drop-down box at some point, but have you ever wondered where those values are actually stored? Many applications, and virtually everything in Windows, is stored in the Registry… somewhere.
 
-For today’s example we’re going to use the first option on the first pane of Taskbar and Navigation Properties, which is a dialog that should exist in all versions of Windows. So now our mission is to figure out where that setting is actually stored in the registry. You can follow along with this particular setting, or you can try one of the other settings on the same dialog — or anywhere else you’d like to find the hidden setting location for.
+For today’s example we’re going to use the first option on the first pane of `Taskbar and Navigation Properties`, which is a dialog that should exist in all versions of Windows. So now our mission is to figure out where that setting is actually stored in the registry. You can follow along with this particular setting, or you can try one of the other settings on the same dialog — or anywhere else you’d like to find the hidden setting location for.
 
 ![](https://web.archive.org/web/20230601055111im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_5334d4f8b2820.png?trim=1,1&bg-color=000&pad=1,1)
 
-The first thing you’ll want to do whenever trying to capture a set of data is to launch Process Monitor, and then change the setting. At that point you can stop Process Monitor from continuing to capture events, so the list doesn’t get out of control. (Hint: the File menu has the option, or it’s the third icon from the left).
+The first thing you’ll want to do whenever trying to capture a set of data is to launch Process Monitor, and then change the setting. At that point you can stop Process Monitor from continuing to capture events, so the list doesn’t get out of control. (Hint: the `File` menu has the option, or it’s the third icon from the left).
 
-Now that we’ve got a ton of data in the list, it’s time to filter the list to reduce the number of rows that we’re going to have to look through. Since we’re looking at a registry value that is being changed, we’ll need to filter by “RegSetValue”, which is what Windows uses to actually set a registry key to a new setting. Use the “Include” option to show _only_ those events.
+Now that we’ve got a ton of data in the list, it’s time to filter the list to reduce the number of rows that we’re going to have to look through. Since we’re looking at a registry value that is being changed, we’ll need to filter by `RegSetValue`, which is what Windows uses to actually set a registry key to a new setting. Use the `Include` option to show _only_ those events.
 
 ![](https://web.archive.org/web/20230601055111im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_5334c67ae7c57.png?trim=1,1&bg-color=000&pad=1,1)
 
-Your list should now be limited to just registry keys that were changed, so it’s time to take a look at the events and try to figure out which registry key it might be. Since we’re checking the “Lock the Taskbar” setting, and one of the registry keys being set includes the word “Taskbar” in the name, that’s a good place to start. Right-click on the path and choose to Jump To the location.
+Your list should now be limited to just registry keys that were changed, so it’s time to take a look at the events and try to figure out which registry key it might be. Since we’re checking the `Lock the Taskbar` setting, and one of the registry keys being set includes the word “Taskbar” in the name, that’s a good place to start. Right-click on the path and choose to `Jump To` the location.
 
 ![](https://web.archive.org/web/20230601055111im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_5334d42a02784.png?trim=1,1&bg-color=000&pad=1,1)
 
@@ -662,7 +666,7 @@ Process Monitor will open up the Registry Editor and highlight the key in the li
 
 ![](https://web.archive.org/web/20230601055111im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_5334d47f67028.png?trim=1,1&bg-color=000&pad=1,1)
 
-So change the setting, hit Apply on the dialog, and then use the F5 key to refresh the Registry Editor window. In our case we definitely picked the right setting, so now you can see that the TaskbarSizeMove value is set to 1.
+So change the setting, hit `Apply` on the dialog, and then use the F5 key to refresh the Registry Editor window. In our case we definitely picked the right setting, so now you can see that the `TaskbarSizeMove` value is set to 1.
 
 ![](https://web.archive.org/web/20230601055111im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_5334d4ab00534.png?trim=1,1&bg-color=000&pad=1,1)
 
@@ -672,9 +676,9 @@ If you didn’t pick the right value, you won’t see a change when you do the s
 
 It’s not really possible to illustrate in a single article how to troubleshoot any problem with Process Monitor, or any other tool for that matter. There are just way too many combinations of issues that could possibly go wrong.
 
-What we can do, however, is show how we actually used Process Monitor to troubleshoot a real problem that actually happened to one of our test computers. We had been installing some crapware, and then decided to try and clean the computer up. The problem was an entry in the Uninstall Programs panel that just wouldn’t go away.
+What we can do, however, is show how we actually used Process Monitor to troubleshoot a real problem that actually happened to one of our test computers. We had been installing some crapware, and then decided to try and clean the computer up. The problem was an entry in the `Uninstall Programs` panel that just wouldn’t go away.
 
-Every time you would click to Change so you could remove it, you’d get an error that said “An error occurred while trying to uninstall AwfulApp. It may have already been uninstalled. Would you like to remove AwfulApp from the Programs and Features list?”.
+Every time you would click to `Change` so you could remove it, you’d get an error that said “An error occurred while trying to uninstall AwfulApp. It may have already been uninstalled. Would you like to remove AwfulApp from the Programs and Features list?”.
 
 ![](https://web.archive.org/web/20230601055111im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_5334c11d536a1.png?trim=1,1&bg-color=000&pad=1,1)
 
@@ -682,19 +686,19 @@ That would have been great, except we then got an error that said “You do not 
 
 ![](https://web.archive.org/web/20230601055111im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_5334c1496df04.png?trim=1,1&bg-color=000&pad=1,1)
 
-The first thing to do was try the uninstall process again with Process Monitor running, which captured an enormous amount of data. This time we decided to use the Find feature (CTRL + F) to quickly find what we were looking for in the list. You could also use a Filter if you wanted, but this seemed simple, and luckily it worked the first time.
+The first thing to do was try the uninstall process again with Process Monitor running, which captured an enormous amount of data. This time we decided to use the Find feature (`CTRL + F`) to quickly find what we were looking for in the list. You could also use a Filter if you wanted, but this seemed simple, and luckily it worked the first time.
 
 ![](https://web.archive.org/web/20230601055111im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_5334c09006545.png?trim=1,1&bg-color=000&pad=1,1)
 
-After taking a look at the first item in the list, we noticed an error: Windows was attempting to access the registry keys related to the uninstaller, but they weren’t actually in the registry in the first spot that Windows was looking. If you look a couple of keys down though, you’ll see a RegOpenKey event with a SUCCESS result for something under HKLM\\Software\\Wow6432Node.
+After taking a look at the first item in the list, we noticed an error: Windows was attempting to access the registry keys related to the uninstaller, but they weren’t actually in the registry in the first spot that Windows was looking. If you look a couple of keys down though, you’ll see a `eg`ROpenKey event with a `SUCCESS` result for something under `HKLM\Software\Wow6432Node`.
 
 ![](https://web.archive.org/web/20230601055111im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_5334bf60a9ab3.png?trim=1,1&bg-color=000&pad=1,1)
 
-Doing a search by that registry key very quickly landed us at the source of the problem: an ACCESS DENIED message when Windows tried to do the cleanup for the list using the RegDeleteKey operation. Interesting!
+Doing a search by that registry key very quickly landed us at the source of the problem: an `ACCESS DENIED` message when Windows tried to do the cleanup for the list using the RegDeleteKey operation. Interesting!
 
 ![](https://web.archive.org/web/20230601055111im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_5334c54eafb39.png?trim=1,1&bg-color=000&pad=1,1)
 
-The first thing to do was use the Jump To feature to find the key in the registry and take a look.
+The first thing to do was use the `Jump To` feature to find the key in the registry and take a look.
 
 ![](https://web.archive.org/web/20230601055111im_/https://www.howtogeek.com/wp-content/uploads/2014/03/img_5334bf792c118.png?trim=1,1&bg-color=000&pad=1,1)
 
@@ -719,9 +723,6 @@ These are just a few of the many ways that you can use Process Monitor – it is
 ## Next Lesson
 
 Starting on Monday with the next lesson, we’ll examine many of the other utilities in the SysInternals Toolkit, including some of the powerful command line tools.
-## Next Lesson
-
-Stay tuned for tomorrow’s lesson, where we will put together all of the knowledge that we’ve gained and show how to use Process Monitor in the real world to accomplish some fun and interesting things.
 
 # 06 Using Autoruns to Deal with Startup Processes and Malware
 
