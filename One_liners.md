@@ -90,7 +90,7 @@ dir | Rename-Item -NewName { $_.Name -replace '€ancienne_chaine','€nouvelle_
 
 ### Supprimer recursivement les fichiers avec une certaine extension d'un répertoire [↰](#sommaire)
 ```powershell
-Get-ChildItem -Path "chemin_du_rÃ©pertoire" -Filter *.€* -Recurse | Remove-Item
+Get-ChildItem -Path "chemin_du_repertoire" -Filter *.€* -Recurse | Remove-Item
 ```
 
 ### Lister les 100 derniers fichiers accédés (gci alias pour [Get-ChildItem](https://blog.netwrix.com/2023/06/21/get-childitem-cmdlet-in-powershell/)) [↰](#sommaire)
